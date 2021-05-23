@@ -70,168 +70,120 @@
       <!--header ends-->
       <!--slider area starts-->
       <div class="container-fluid mt-5 pt-5">
-
           <div class="row">
-              <div class="col-lg-9 col-md-9 col-sm-12 text-center animate__animated animate__backInRight">
-                  <h2 class="myheading">Pick some photos to get started</h2>
-                  <div class="row" id="upload-first">
-                      <div class="col-lg-1"></div>
-                      <div class="col-lg-4 text-center mt-2 mb-2 upload">
-                          <i class="fas fa-camera  myheading mt-4" style="font-size: 40px;"></i>
+            <div class="col-lg-9 col-md-9 col-sm-12 text-center animate__animated animate__backInRight">
+              <h2 class="myheading">Pick some photos to get started</h2>
+              <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-4 text-center mt-2 mb-2 upload">
+                  <i class="fas fa-camera  myheading mt-4" style="font-size: 40px;"></i>
 
-                          <div class="custom-file mb-3">
-                              <input class="custom-file-input form-control upload-file" type="file" accept="image/jpeg, image/png" >
-                              <label for="upload-file" class="custom-file-label">Choose Image</label>
-                          </div>
-
-                      </div>
-                      <div class="col-lg-4 mt-2 mb-2 upload">
-                          <div class="row text-center social">
-                              <i class="fab fa-facebook" style="font-size: 40px; color: rgb(17, 17, 109); "></i><span>Import from Facebook</span>
-
-                          </div>
-                          <div class="row text-center social mt-3 mb-2">
-                              <i class="fab fa-instagram" style="font-size: 40px; color:rgb(245 7 172); "></i><span>Import from Instagram</span>
-                          </div>
-                      </div>
-                      <div class="col-lg-3">
-
-                      </div>
-
-                  </div>
-                  <div class="row" id="div2" >
-
-
-                      <div class="col-md-4 mt-2 mb-2" >
-                          <div class="row text-center">
-                              <div class="col-md-12 social">
-                                  <div class="row">
-                                      <div class="col-md-4">
-                              <i class="fas fa-camera  myheading " style="font-size: 20px;"></i>
-                                      </div>
-                              <div class="custom-file col-md-8">
-                                  <input type="file" class="custom-file-input form-control upload-file" >
-                              </div>
-                                  </div>
-                          </div>
-                          <div class="col-md-12 social">
-                              <div class="row">
-                                  <div class="col-md-4">
-                              <i class="fab fa-facebook" style="font-size: 25px; color: rgb(17, 17, 109); "></i>
-                                  </div>
-                                  <div class="col-md-8">
-                                      <span> Import from Facebook</span>
-                                  </div>
-                                  </div>
-                          </div>
-                          <div class="col-md-12 social">
-{{--                              <i class="fab fa-instagram" style="font-size: 25px; "></i><span> Import from Instagram</span>--}}
-                              <div class="row">
-                                  <div class="col-md-4">
-                                      <i class="fab fa-instagram" style="font-size: 25px; color: rgb(245 7 172); "></i>
-                                  </div>
-                                  <div class="col-md-8">
-                                      <span> Import from Instagram</span>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      </div>
-
-
+                  <div class="custom-file mb-3">
+                    <input type="file" class="custom-file-input form-control" id="upload-file">
+                    <label for="upload-file" class="custom-file-label">Choose Image</label>
                   </div>
 
-                  <!--   <div class="col-lg-2">
+                </div>
+                <div class="col-lg-4 mt-2 mb-2 upload">
+                  <div class="row text-center social">
+                    <i class="fab fa-facebook" style="font-size: 40px; color: rgb(17, 17, 109); "></i><span>Import from Facebook</span>
 
+                  </div>
+                  <div class="row text-center social mt-3 mb-2">
+                    <i class="fab fa-instagram" style="font-size: 40px; "></i><span>Import from Instagram</span>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <canvas id="canvas"></canvas>
 
-                        <button class="mybtn2" id="crop">Crop</button>
-                       <button class="mybtn2" id="deletebtn">Delete</button>
-                     </div> -->
-
+                  <button class="mybtn2" id="crop">Crop</button>
+                  <button class="mybtn2" id="deletebtn">Delete</button>
+                </div>
 
               </div>
+
+
+            </div>
               <div class="col-lg-3 col-md-3 col-sm-12 animate__animated animate__backInLeft ">
-                  <div>
+              <div>
 
-                      <div class="row my-4" style="cursor:pointer;" id="calssic">
-                          <div class="col-md-3 col-md-3 col-sm-3" >
-                              <img src="{{asset('front/images/classicIcon@2x.png')}}" class="img-fluid" max-width="100%" height="auto" alt="" >
-
-                          </div>
-                          <div class="col-lg-9 col-md-9 col-sm-9" >
-                              <h4>classic</h4>
-
-                          </div>
-
-                      </div>
-                      <div class="row my-4" style="cursor:pointer;" id="bold">
-                          <div class="col-lg-3">
-                              <img src="{{asset('front/images/boldIcon@2x.png')}}" class="img-fluid" max-width="100%" height="auto" alt="" >
-
-                          </div>
-                          <div class="col-lg-9">
-                              <h4>Bold</h4>
-
-                          </div>
-
-                      </div>
-                      <div class="row my-4" style="cursor:pointer;" id="ever">
-                          <div class="col-lg-3">
-                              <img src="{{asset('front/images/everIcon@2x.png')}}" class="img-fluid" max-width="100%" height="auto" alt="" >
-
-                          </div>
-                          <div class="col-lg-9">
-                              <h4>Ever</h4>
-
-                          </div>
-
-                      </div>
-                      <div class="row my-4 " style="cursor:pointer;" id="Clean" >
-                          <div class="col-lg-3">
-                              <img src="{{asset('front/images/cleanIcon@2x.png')}}" class="img-fluid" max-width="100%" height="auto" alt="" >
-
-                          </div>
-                          <div class="col-lg-9">
-                              <h4>Clean</h4>
-
-                          </div>
-
-                      </div>
-                      <div class="row my-4" style="cursor:pointer;" id="Edge" >
-                          <div class="col-lg-3">
-                              <img src="{{asset('front/images/edgeIcon@2x.png')}}" class="img-fluid" max-width="100%" height="auto" alt="" >
-
-                          </div>
-                          <div class="col-lg-9">
-                              <h4>Edge</h4>
-
-                          </div>
-                      </div>
-                      <!--  <div class="row my-4">
-                         <div class="col-12">
-                           <button class="mybtn2" id="revert-btn">Remove Changes</button>
-
-                         </div>
-                       </div> -->
-                      <div class="row my-4">
-                          <div class="col-12">
-                              <button class="mybtn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Checkout</button>
-
-                          </div>
-                      </div>
-
+                <div class="row my-4" >
+                  <div class="col-lg-3 col-md-3 col-sm-3" >
+                    <img src="{{asset('front/images/classicIcon@2x.png')}}" class="img-fluid" max-width="100%" height="auto" alt="" >
 
                   </div>
+                  <div class="col-lg-9 col-md-9 col-sm-9" >
+                    <h4>classic</h4>
+                    <button class="filter-btn vintage-add mybtn2">apply</button>
+                  </div>
+
+                </div>
+                <div class="row my-4">
+                  <div class="col-lg-3">
+                    <img src="{{asset('front/images/boldIcon@2x.png')}}" class="img-fluid" max-width="100%" height="auto" alt="" >
+
+                  </div>
+                  <div class="col-lg-9">
+                    <h4>Bold</h4>
+                    <button class="filter-btn lomo-add mybtn2">apply</button>
+                  </div>
+
+                </div>
+                <div class="row my-4">
+                  <div class="col-lg-3">
+                    <img src="{{asset('front/images/everIcon@2x.png')}}" class="img-fluid" max-width="100%" height="auto" alt="" >
+
+                  </div>
+                  <div class="col-lg-9">
+                    <h4>Ever</h4>
+                    <button class="filter-btn clarity-add mybtn2">apply</button>
+                  </div>
+
+                </div>
+                <div class="row my-4 " >
+                  <div class="col-lg-3">
+                    <img src="{{asset('front/images/cleanIcon@2x.png')}}" class="img-fluid" max-width="100%" height="auto" alt="" >
+
+                  </div>
+                  <div class="col-lg-9">
+                    <h4>Clean</h4>
+                    <button class="filter-btn sincity-add mybtn2">apply</button>
+                  </div>
+
+                </div>
+                <div class="row my-4">
+                  <div class="col-lg-3">
+                    <img src="{{asset('front/images/edgeIcon@2x.png')}}" class="img-fluid" max-width="100%" height="auto" alt="" >
+
+                  </div>
+                  <div class="col-lg-9">
+                    <h4>Edge</h4>
+                    <button class="filter-btn crossprocess-add mybtn2">apply</button>
+                  </div>
+                  <div class="row my-4">
+                    <div class="col-12">
+                      <button class="mybtn2" id="revert-btn">Remove Changes</button>
+
+                    </div>
+                  </div>
+                  <div class="row my-4">
+                    <div class="col-12">
+                      <button class="mybtn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Checkout</button>
+
+                    </div>
+                  </div>
+
+
+                </div>
               </div>
 
 
 
-              <input type="hidden" name="countt" id="countt" value="1" >
+
+
+              </div>
 
           </div>
-
-
-
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header">
               <h5 class="offcanvas-title myheading" id="offcanvasExampleLabel">Check Out</h5>
@@ -666,67 +618,7 @@ integrity="sha512-FHa4dxvEkSR0LOFH/iFH0iSqlYHf/iTwLc5Ws/1Su1W90X0qnxFxciJimoue/z
                     $form.get(0).submit();
                 }
             }
-        });
-
-
-
-        $('document').ready(function(){
-            $('#calssic').click(function(){
-
-                $('.canvas').addClass('canvas1');
-                $('.canvas').removeClass('canvas2');
-                $('.canvas').removeClass('canvas3');
-                $('.canvas').removeClass('canvas4');
-                $('.canvas').removeClass('canvas5');
-
-            });
-            $('#bold').click(function(){
-                $('.canvas').addClass('canvas2');
-                $('.canvas').removeClass('canvas1');
-                $('.canvas').removeClass('canvas3');
-                $('.canvas').removeClass('canvas4');
-                $('.canvas').removeClass('canvas5');
-
-
-            });
-            $('#ever').click(function(){
-                $('.canvas').addClass('canvas3');
-                $('.canvas').removeClass('canvas1');
-                $('.canvas').removeClass('canvas2');
-                $('.canvas').removeClass('canvas4');
-                $('.canvas').removeClass('canvas5');
-
-
-            });
-            $('#Clean').click(function(){
-                $('.canvas').addClass('canvas4');
-                $('.canvas').removeClass('canvas1');
-                $('.canvas').removeClass('canvas2');
-                $('.canvas').removeClass('canvas3');
-                $('.canvas').removeClass('canvas5');
-
-
-            });
-            $('#Edge').click(function(){
-                $('.canvas').addClass('canvas5');
-                $('.canvas').removeClass('canvas1');
-                $('.canvas').removeClass('canvas2');
-                $('.canvas').removeClass('canvas3');
-                $('.canvas').removeClass('canvas4');
-
-
-            });
-            $('#revert-btn').click(function(){
-                $('.canvas').removeClass('canvas1');
-                $('.canvas').removeClass('canvas2');
-                $('.canvas').removeClass('canvas3');
-                $('.canvas').removeClass('canvas4');
-                $('.canvas').removeClass('canvas5');
-            });
-
-
-
-        });
+        })
     </script>
 
 </body>

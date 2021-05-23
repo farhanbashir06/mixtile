@@ -70,36 +70,37 @@
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-8">
-                <form action="" method="post">
+                <form action="{{url('/contact-to-admin')}}" method="post" >
+                    @csrf
                     <div class="row my-4">
                         <div class="col-md-6">
                             <label  class="form-label">First Name</label>
-                          <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                          <input name="fname" type="text" class="form-control" placeholder="First name" aria-label="First name" required>
                         </div>
                     </div>
                        <div class="row my-4">
                         <div class="col-md-6">
-                            <label for= class="form-label">Last Name</label>
-                          <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                            <label class="form-label">Last Name</label>
+                          <input name="lname" type="text" class="form-control" placeholder="Last name" aria-label="Last name" required>
                         </div>
                        </div>
 
                       <div class="row my-4">
                         <div class="col-md-6">
                           <label for="inputEmail4" class="form-label">Email</label>
-                          <input type="email" class="form-control" placeholder="your email" id="inputEmail4">
+                          <input name="email" type="email" class="form-control" placeholder="your email" required >
                         </div>
                         </div>
                         <div class="row my-4">
                             <div class="col-md-6">
                                 <label for= class="form-label">Subject</label>
-                              <input type="text" class="form-control" placeholder="Massage Subject" aria-label="Last name">
+                              <input type="text" name="subject" class="form-control" placeholder="Massage Subject" required>
                             </div>
                            </div>
                            <div class="row my-4">
                             <div class="col-md-12">
-                                <label for= class="form-label">Your Massage</label>
-                             <textarea name="Massage" class="form-control"  rows="5"></textarea>
+                                <label for= class="form-label">Your Message</label>
+                             <textarea name="mailbody" class="form-control"  rows="5" required></textarea>
                             </div>
                            </div>
 

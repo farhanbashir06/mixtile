@@ -48,4 +48,6 @@ Route::get('admin/home', [App\Http\Controllers\HomeController::class, 'index'])-
 Route::resource('homepage',\App\Http\Controllers\Admin\HomePageController::class);
 Route::get('homepage/review/{id}', [\App\Http\Controllers\Admin\HomePageController::class,'del_single'])->name('del.review');
 Route::post('/stripe',[\App\Http\Controllers\PaymentsController::class, 'stripe']);
+Route::post('/contact-to-admin',[\App\Http\Controllers\ContactController::class, 'send_mail']);
+
 
