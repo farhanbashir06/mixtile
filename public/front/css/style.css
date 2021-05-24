@@ -455,11 +455,7 @@ figcaption a {
     width: 100% !important;
     border-radius: 7px;
 }
-canvas {
-    margin: auto;
 
-    width: 100%;
-}
 .mybtn2{
     background-color: darkred !important;
     color: #fff !important;
@@ -502,52 +498,76 @@ canvas {
     margin-top: 48.45px;
 }
 .canvas1{
-    border: #000 10px solid;
+    border: rgb(66, 64, 64) 5px solid;
     padding: 15px !important;
-
+    outline:  7px solid #000;
+    outline-style:outset;
     border-style:groove;
-}
+  }
 .canvas2{
-    border: #000 10px solid;
+    border: rgb(66, 64, 64) 5px solid;
     padding: 0px !important;
-
-    border-style:groove;
-}
+   outline:  7px solid #000;
+   outline-style: outset;
+    border-style:outset;
+  }
 .canvas3{
-    border-width: 12px;
+    border-width: 5px;
+    outline: rgb(236, 234, 234);
+    outline-width: 7px;
+    outline-style: inset;
     border-style: inset;
-    border-color: initial;
+    border-color: #ddd;
     border-image: initial;
     padding: 15px !important ;
     -webkit-tap-highlight-color:transparent;
-}
+  }
 .canvas4{
-    border-width: 12px;
+    border-width: 5px;
+    outline: rgb(236, 234, 234);
+    outline-width: 7px;
+    outline-style: inset;
     border-style: inset;
-    border-color: initial;
+    border-color: #ddd;
     border-image: initial;
     padding: 0px !important ;
     -webkit-tap-highlight-color:transparent;
-}
+  }
 .canvas5{
-    border-width: 12px;
-    border-style: ridge;
-    border-color: #000;
+  
+    border-style: outset;
+    
     border-image: initial;
     padding: 0px !important ;
-    -webkit-tap-highlight-color:transparent;
-    border-left-color: #fff;
-    border-top-color: #fff;
-    border-left-width: 0px;
-    border-top-width: 0px;
-
-}
+  
+    border-left-color: #fff !important;
+    border-top-color: #fff !important;
+    border-left-width: 0px !important;
+    border-top-width: 0px !important;
+    border-right-color: #000 !important;
+    border-bottom-color: #000 !important;
+    border-right-width: 12px !important;
+    border-bottom-width: 12px !important;
+  
+  }
 .canvas-show{
     display: none !important;
 }
 .canvas-hide{
     display:inline-flex !important;
 }
+@media screen and (max-width: 600px) {
+    .newclass{
+      display: inline-block !important;
+      max-width: 25% !important;
+      
+  }
+  .new3 h4 {
+    font-size: 10px !important;
+  }
+  
+    
+  }
 
 
 

@@ -69,7 +69,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <ul>
-                    <li><a href="#" class="menu">About us</a>
+                    <li><p  class="menu">About us</p>
 
                     </li>
                     <li class="mt-2">
@@ -79,7 +79,7 @@
                         <a href="#" class="menu">Careers</a>
                     </li>
                     <li class="mt-2">
-                        <a href="" class="menu">Accessbility Statement</a>
+                        <a href="{{route('access')}}" class="menu">Accessbility Statement</a>
                     </li>
                 </ul>
             </div>
@@ -104,9 +104,9 @@
                     <i class="fas fa-sms chat"></i>
                     <h5 class="mx-5 menu">Need Some Help</h5>
                     <p  class="mx-5 menu">Our team is ready  to help you <br> text us now</p>
-                    <button class="btn-lg btn-danger mx-5">
-                        Chat with us
-                    </button>
+                    <a class="btn-lg mybtn2 mx-5" href="{{route('contact')}}">
+                        Contact Us
+                   </a>
 
 
                 </div>
@@ -120,38 +120,52 @@
         <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">FAQs</h5>
+                    <h5 class="modal-title myheading" id="exampleModalLabel">FAQs</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    How much do Mixtiles cost?
-                    Each order starts with US$58 for the first 3 tiles, then US$12 for each additional tile in that set.
-                    How big are the tiles?
-                    They’re about 20 by 20 cm and 2 cm thick (8 by 8 inches and just under an inch thick).
-                    Have you got any other sizes?
-                    Not for now, but we'd love to. Hopefully soon!
-                    How long does shipping take?
-                    Usually about a week. In some countries it takes a little longer, but the app will show you your expected delivery date before you confirm your order.
-                    How do Mixtiles work?
-                    There’s a sticky strip on the back of them. You peel off the protective paper and stick them on the wall. Easy as pie! (We enjoy pie.)
-                    Is it easy to move the tiles around?
-                    Super easy - that's what Mixtiles are made for! Just pop them off the wall and stick them in a different spot. Knock yourself out, you can do this a few dozen times!
-                    And they won't hurt my walls?
-                    Nope, no damage.
-                    Are there any kinds of walls Mixtiles won't stick to?
-                    They work great on the vast majority of walls. But if you have any trouble at all, just let us know and we'll get you a refund.
-                    Can I get my order rush shipped?
-                    Not for now, sorry!
-                    Is there a minimum photo resolution I should use?
-                    Your pics should be at least 499 x 499 pixels to make a clear print. The app will warn you if your pics are smaller than that.
-                    Can I use photos from my Facebook or Instagram?
-                    Yup! Select "Choose from Online Services" when adding your photos.
-                    Do you ship internationally?
-                    We ship to most countries around the world. You can choose your country from the drop-down menu when you enter your address!
+                <h4 class="myheading">How much do Saychizz cost?</h4> 
+                 <p>Each order starts with US$58 for the first 3 tiles,<br> then US$12 for each additional tile in that set.</p> 
+                <h4 class="myheading">How big are the tiles?</h4>
+                <p>They’re about 20 by 20 cm and 2 cm thick (8 by 8 <br> inches and just under an inch thick).</p>
+                  <h4 class="myheading">Have you got any other sizes?</h4>
+                  <p>Not for now, but we'd love to. Hopefully soon!</p>
+                  
+                  
+                  <h4 class="myheading">How long does shipping take?</h4>
+                  <p> Usually about a week. In some countries it takes a <br>
+                     little longer, but the app will show you your expected <br>
+                      delivery date before you confirm your order.</p>
+                  
+                 
+                  <h4 class="myheading">How do Saychizz work?</h4>
+                  <p>There’s a sticky strip on the back of them. You peel <br>
+                     off the protective paper and stick them on the wall.
+                      Easy as pie! (We enjoy pie.)</p>
+                      <h4 class="myheading">Is it easy to move the tiles around?</h4> 
+                      <p>Super easy - that's what Saychizzs are made for! Just <br>
+                         pop them off the wall and stick them in a different spot. <br>
+                          Knock yourself out, you can do this a few dozen times!</p>
+                          <h4 class="myheading">And they won't hurt my walls?</h4>
+                          <p>Nope, no damage.</p>
+                          <h4 class="myheading">Are there any kinds of walls Saychizz won't stick to?</h4>
+                          <p>They work great on the vast majority of walls. But if you have any trouble at all, <br>
+                             just let us know and we'll get you a refund.</p>
+                             <h4 class="myheading">Can I get my order rush shipped?</h4>
+                             <p> Not for now, sorry!</p>
+                             <h4 class="myheading"> Is there a minimum photo resolution I should use?</h4>
+                             <p>Your pics should be at least 499 x 499 pixels to make a clear print. The app will <br>
+                               warn you if your pics are smaller than that.</p>
+                               <h4 class="myheading">Can I use photos from my Facebook or Instagram?</h4>
+                               <p> Yup! Select "Choose from Online Services" when adding your photos.</p>
+                               <h4 class="myheading"> Do you ship internationally?</h4>
+                               <p>We ship to most countries around the world. </p>
+                  
+                 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn mybtn2" data-bs-dismiss="modal">Close</button>
+                   
                 </div>
             </div>
         </div>
