@@ -32,8 +32,8 @@ $('.upload-file').change(function(){
 
                 $("#div2").append('<div class="col-md-4 text-center mt-2 mb-2 remove_r_'+i+'" >'
                     +'<img class="canvas" src="'+img.src+'" width="240px" height="250px" id="canva_'+i+'">'
-                     +'<div class="row"><div class="col-md-6"><button class"btn btn-warning" onclick="crop_img(event,'+i+')">Crop</button></div>'
-                    +'<div class="col-md-6"><button class"btn btn-warning" onclick="remove_canvaa('+i+')">Remove</button></div></div>'
+                     +'<div class="row"><div class="col-md-6"></div>'
+                    +'<div class="col-md-6"><button class"mybtn mt-3" onclick="remove_canvaa('+i+')">Remove</button></div></div>'
                     +'<input type="hidden" name="imgs[]" val="'+img.src+'"></div>'
                 );
                 // $("#canva_"+i+"").attr('src',img.src);

@@ -656,7 +656,7 @@
       $('#calssic').click(function() {
 
         $('.canvas').addClass('canvas1');
-        
+        $('html').removeAttr('class');
         $('.canvas').removeClass('canvas2');
         $('.canvas').removeClass('canvas3');
         $('.canvas').removeClass('canvas4');
@@ -665,7 +665,7 @@
       });
       $('#bold').click(function() {
         $('.canvas').addClass('canvas2');
-        
+        $('html').removeAttr('class');
         $('.canvas').removeClass('canvas1');
         $('.canvas').removeClass('canvas3');
         $('.canvas').removeClass('canvas4');
@@ -675,6 +675,7 @@
       });
       $('#ever').click(function() {
         $('.canvas').addClass('canvas3');
+        $('html').removeAttr('class');
         $('.canvas').removeClass('canvas1');
         $('.canvas').removeClass('canvas2');
         $('.canvas').removeClass('canvas4');
@@ -684,6 +685,7 @@
       });
       $('#Clean').click(function() {
         $('.canvas').addClass('canvas4');
+        $('html').removeAttr('class');
         $('.canvas').removeClass('canvas1');
         $('.canvas').removeClass('canvas2');
         $('.canvas').removeClass('canvas3');
@@ -693,6 +695,7 @@
       });
       $('#Edge').click(function() {
         $('.canvas').addClass('canvas5');
+        $('html').removeAttr('class');
         $('.canvas').removeClass('canvas1');
         $('.canvas').removeClass('canvas2');
         $('.canvas').removeClass('canvas3');
